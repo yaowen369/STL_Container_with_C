@@ -1,0 +1,19 @@
+extern void *memset(void *buffer, int c, int count);
+把buffer所指内存区域的前count个字节设置成字符 c
+
+
+
+extern void *memcpy(void*dest,void*src,unsignedintcount);
+由src所指内存区域复制count个字节到dest所指内存区域。
+
+
+int memcmp(const void *buf1, const void *buf2, unsigned int count);
+比较内存区域buf1和buf2的前count个字节。该函数是按字节比较的。
+当buf1<buf2时，返回值小于0
+当buf1==buf2时，返回值=0
+当buf1>buf2时，返回值大于0
+
+
+
+ memset   主要应用是初始化某个内存空间。
+ memcpy   是用于copy源空间的数据到目的空间中。
