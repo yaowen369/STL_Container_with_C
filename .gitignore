@@ -50,3 +50,11 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+
+//yaowen add
+bin/
+obj/
+*.cbp
+*.depend
+*.layout

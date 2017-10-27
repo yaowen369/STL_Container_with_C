@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "testStack.h"
 
 
 int main()
 {
-    printf("Hello world!\n");
+    TestCTLStack();
     system("pause");
     return 0;
 }
