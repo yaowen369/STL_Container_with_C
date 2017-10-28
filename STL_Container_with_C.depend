@@ -3,3 +3,34 @@
 	<stdio.h>
 	<stdlib.h>
 
+1509110455 source:d:\code\github_blog\stl_container_with_c\src\ctlstack.c
+	"CTLStack.h"
+
+1509109696 d:\code\github_blog\stl_container_with_c\src\ctlstack.h
+	"ctl.h"
+	"ctl.h"
+
+1509110452 d:\code\github_blog\stl_container_with_c\src\ctl.h
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+
+1509188747 source:d:\code\github_blog\stl_container_with_c\src\debug.c
+	"debug.h"
+
+1509188048 d:\code\github_blog\stl_container_with_c\src\debug.h
+	"CTLStack.h"
+
+1509108946 source:d:\code\github_blog\stl_container_with_c\src\main.c
+	<stdio.h>
+	<stdlib.h>
+	"testStack.h"
+
+1509188316 d:\code\github_blog\stl_container_with_c\src\teststack.h
+
+1509188815 source:d:\code\github_blog\stl_container_with_c\src\teststack.c
+	"CTLStack.h"
+	"testStack.h"
+	"debug.h"
+

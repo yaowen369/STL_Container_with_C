@@ -9,6 +9,8 @@
  #ifndef _CTL_DEBUG_H
  #define _CTL_DEBUG_H
 
+ #include "CTLStack.h"
+
  extern void PrintStack(struct CTLStack stack);
  extern void DealResult(int result);
 

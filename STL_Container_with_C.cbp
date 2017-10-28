@@ -34,6 +34,14 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="recrod">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="src/CTLStack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/CTLStack.h" />
+		<Unit filename="src/ctl.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
