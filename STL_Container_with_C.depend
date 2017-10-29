@@ -16,7 +16,7 @@
 	<stdlib.h>
 	<assert.h>
 
-1509188747 source:d:\code\github_blog\stl_container_with_c\src\debug.c
+1509279776 source:d:\code\github_blog\stl_container_with_c\src\debug.c
 	"debug.h"
 
 1509188048 d:\code\github_blog\stl_container_with_c\src\debug.h
@@ -27,9 +27,11 @@
 	<stdlib.h>
 	"testStack.h"
 
-1509188316 d:\code\github_blog\stl_container_with_c\src\teststack.h
+1509278460 d:\code\github_blog\stl_container_with_c\src\teststack.h
+	<stdio.h>
+	<string.h>
 
-1509188815 source:d:\code\github_blog\stl_container_with_c\src\teststack.c
+1509277760 source:d:\code\github_blog\stl_container_with_c\src\teststack.c
 	"CTLStack.h"
 	"testStack.h"
 	"debug.h"

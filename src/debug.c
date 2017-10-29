@@ -69,7 +69,6 @@ void PrintStack(struct CTLStack stack){
     switch(stack.typeSize){
         case TYPE_CHAR:
             str = "Stack 的数据类型为 char 类型\n";
-            printf(str);
             break;
         case TYPE_INT:
             str = "Stack 的数据类型为 int 类型\n";
