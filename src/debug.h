@@ -10,9 +10,11 @@
  #define _CTL_DEBUG_H
 
  #include "CTLStack.h"
+ #include "CTLQueue.h"
 
  extern void PrintStack(struct CTLStack stack);
  extern void DealResult(int result);
+ extern void PrintQueue(struct CTLQueue queue, int typeSize);
 
 
 

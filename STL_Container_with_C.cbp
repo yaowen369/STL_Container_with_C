@@ -5,6 +5,7 @@
 		<Option title="STL_Container_with_C" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
+		<Option virtualFolders="src\;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/STL_Container_with_C" prefix_auto="1" extension_auto="1" />
@@ -31,9 +32,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="main.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="recrod">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
@@ -42,6 +40,17 @@
 		</Unit>
 		<Unit filename="src/CTLStack.h" />
 		<Unit filename="src/ctl.h" />
+		<Unit filename="src/debug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/debug.h" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/testStack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/testStack.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

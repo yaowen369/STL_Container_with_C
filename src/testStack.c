@@ -276,7 +276,5 @@ void TestCTLStack(){
         printf("你输入的值有误, %s\n", typePtr);
     }
 
-
-
     printf("测试结束!!!!");
 }

@@ -94,6 +94,48 @@ void PrintStack(struct CTLStack stack){
 	putchar(10);
 }
 
+// 依次输出queue中的数据，无数据的位置输出*号代替(因为我们把 length长度的内容都输出)
+void PrintQueue(struct CTLQueue queue, int typeSize){
+	int i;
+	//double *pVar;
+	void *pVoid;
+
+	printf("这个queue的信息如下:\n");
+    char *str = "";
+    switch(queue.typeSize){
+        case TYPE_CHAR:
+            str = "\t\tQueue 的数据类型为 char 类型\n";
+            break;
+        case TYPE_INT:
+            str = "\t\tQueue 的数据类型为 int 类型\n";
+            break;
+        case TYPE_DOUBLE:
+            str = "\t\tQueue 的数据类型为 double 类型\n";
+            break;
+        default:
+            str = "\t\tPrintQueue 出现未定义的typeSize = " + queue.typeSize;
+
+    }
+    printf(str);
+
+    printf("\t\ttypeSize=%d, front=%d, rear=%d, length=%d\n", queue.typeSize, queue.front, queue.rear, queue.length-1);
+	printf("\t\t这个queue中共有%d个元素,他们依次是：\n", CTLQueueGetNum(queue));
+
+
+	for (i=0; i<queue.length-1; i++){
+        if (i%10 == 0)
+            printf("\n");
+
+        if ((i<queue.front) || (i>=queue.rear))
+            printf("*  ");
+        else{
+            pVoid = queue.data;
+            pVoid = (char *)pVoid + i * queue.typeSize;
+            PrintValue(pVoid, typeSize);
+        }
+    }
+    printf("\n");
+}//end of "PrintQueue(..."
 
 
 
