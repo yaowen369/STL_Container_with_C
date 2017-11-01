@@ -59,6 +59,8 @@ void DealResult(int result){
 }// end of "DealResult"
 
 
+// -------------   queue测试代码 start  ---------------------//
+
 
 // 输出stack中的数据等资料。
 void PrintStack(struct CTLStack stack){
@@ -136,6 +138,131 @@ void PrintQueue(struct CTLQueue queue, int typeSize){
     }
     printf("\n");
 }//end of "PrintQueue(..."
+
+// -------------   List 测试代码 start  ---------------------//
+
+
+//依次输出list中的数据以及其他资料（假设其数据类型为int类型）
+static void PrintListInt(CTLList list){
+	int i;
+	int *pInt;
+	ListNode *ptr = list.root;
+
+	printf("\t 这个list中元素类型所占字节数是%d, 其元素个数为%d\n", list.typeSize, list.num);
+	printf("\t 这些数据都是int类型，他们依次是：");
+	for (i=0; i<list.num; i++){
+		if (i%10 == 0)
+			printf("\n");
+
+		pInt = (int *)(ptr->data);
+		printf("%d  ", *pInt);
+		ptr = ptr->next;
+	}
+	putchar(10);
+}
+
+//依次输出list中的数据以及其他资料（假设其数据类型为double类型）
+static void PrintListDouble(CTLList list) {
+	int i;
+	double *pDou;
+	ListNode *ptr = list.root;
+
+	printf("\t 这个list中元素类型所占字节数是%d, 其元素个数为%d\n", list.typeSize, list.num);
+	printf("\t 这些数据都是double类型，他们依次是：");
+	for (i=0; i<list.num; i++){
+		if (i%10 == 0)
+			printf("\n");
+
+		pDou = (double *)(ptr->data);
+		printf("%f  ", *pDou);
+		ptr = ptr->next;
+	}
+	putchar(10);
+}
+
+//依次输出list中的数据以及其他资料（假设其数据类型为char类型）
+static void PrintListChar(CTLList list){
+	int i;
+	char *pChar;
+	ListNode *ptr = list.root;
+
+	printf("\t 这个list中元素类型所占字节数是%d, 其元素个数为%d\n", list.typeSize, list.num);
+	printf("\t 这些数据都是char类型，他们依次是：");
+	for (i=0; i<list.num; i++){
+		if (i%10 == 0)
+			printf("\n");
+
+		pChar = (char *)(ptr->data);
+		printf("%c  ", *pChar);
+		ptr = ptr->next;
+	}
+	putchar(10);
+}
+
+//依次输出list中数据以及相关资料，（根据typeSize大小来自动区分类型）
+void PrintList(CTLList list){
+	switch (list.typeSize){
+		case 1:
+			PrintListChar(list);
+			break;
+		case 4:
+			PrintListInt(list);
+			break;
+		case 8:
+			PrintListDouble(list);
+			break;
+		default:
+			printf("debug,cpp中PrintList()函数typeSize出现未定义值\n");
+			break;
+	}
+}
+
+
+
+//根据size大小不同，来区分输出时的是int ,double,或者char类型
+void PrintType(void *record, int size){
+	assert(record);
+
+	switch(size){
+		case 1:
+			printf("%c", *((char *)record));
+			break;
+		case 4:
+			printf("%d", *((int *)record));
+			break;
+		case 8:
+			printf("%f", *((double *)record));
+			break;
+		default:
+			printf("debug.cpp文件中PrintListType()形参size出现未定义值\n");
+			break;
+	}
+}
+
+
+//根据size不同，来区分输入的是val的哪一个成员
+void ScanType(union ScanVal *val, int size){
+	switch(size){
+		case 1:
+			printf("请输入char类型数据.");
+			scanf("%c", &val->ch);
+			getchar();
+			break;
+		case 4:
+			printf("请输入int类型数据.");
+			scanf("%d", &val->i);
+			getchar();
+			break;
+		case 8:
+			printf("请输入double类型数据.");
+			scanf("%lf", &val->dou);
+			getchar();
+			break;
+		default:
+			printf("debug.cpp文件中ScanfType()形参size出现未定义值\n");
+			break;
+	}
+}
 
 
 

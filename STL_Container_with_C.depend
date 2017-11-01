@@ -16,18 +16,20 @@
 	<stdlib.h>
 	<assert.h>
 
-1509366355 source:d:\code\github_blog\stl_container_with_c\src\debug.c
+1509538949 source:d:\code\github_blog\stl_container_with_c\src\debug.c
 	"debug.h"
 
-1509362287 d:\code\github_blog\stl_container_with_c\src\debug.h
+1509538879 d:\code\github_blog\stl_container_with_c\src\debug.h
 	"CTLStack.h"
 	"CTLQueue.h"
+	"CTLList.h"
 
-1509363624 source:d:\code\github_blog\stl_container_with_c\src\main.c
+1509539415 source:d:\code\github_blog\stl_container_with_c\src\main.c
 	<stdio.h>
 	<stdlib.h>
 	"testStack.h"
 	"testQueue.h"
+	"testList.h"
 
 1509278460 d:\code\github_blog\stl_container_with_c\src\teststack.h
 	<stdio.h>
@@ -44,10 +46,23 @@
 1509361323 d:\code\github_blog\stl_container_with_c\src\ctlqueue.h
 	"ctl.h"
 
-1509364004 source:d:\code\github_blog\stl_container_with_c\src\testqueue.c
+1509366561 source:d:\code\github_blog\stl_container_with_c\src\testqueue.c
 	"testQueue.h"
 
 1509358212 d:\code\github_blog\stl_container_with_c\src\testqueue.h
 	"CTLQueue.h"
 	"debug.h"
+
+1509535979 source:d:\code\github_blog\stl_container_with_c\src\ctllist.c
+	"CTLList.h"
+
+1509536053 d:\code\github_blog\stl_container_with_c\src\ctllist.h
+	"ctl.h"
+
+1509538706 d:\code\github_blog\stl_container_with_c\src\testlist.h
+	"debug.h"
+	"CTLList.h"
+
+1509539235 source:d:\code\github_blog\stl_container_with_c\src\testlist.c
+	"testList.h"
 

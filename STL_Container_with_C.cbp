@@ -35,6 +35,10 @@
 		<Unit filename="recrod">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="src/CTLQueue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/CTLQueue.h" />
 		<Unit filename="src/CTLStack.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -47,6 +51,10 @@
 		<Unit filename="src/main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="src/testQueue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/testQueue.h" />
 		<Unit filename="src/testStack.c">
 			<Option compilerVar="CC" />
 		</Unit>
