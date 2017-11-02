@@ -55,6 +55,7 @@ dkms.conf
 //yaowen add
 bin/
 obj/
-*.cbp
-*.depend
-*.layout
+
+.depend
+.cbp
+.layout

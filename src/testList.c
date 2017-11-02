@@ -61,7 +61,7 @@ static void TestListGetTail(CTLList list){
 	}
 }
 
-//º¯²âÊÔCTLListPushFront()º¯Êı;
+//²âÊÔCTLListPushFront()º¯Êı;
 static void TestListPushFront(CTLList *list){
 	int result;
 	union ScanVal val;

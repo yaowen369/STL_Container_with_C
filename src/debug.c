@@ -265,4 +265,85 @@ void ScanType(union ScanVal *val, int size){
 }
 
 
+//依次输出vrector的相关资料，以及各个数据(其数据类型为int)
+static void PrintVectorInt(CTLVector vector){
+	int i, *pInt;
+	void *ptr;
+
+	printf("\t vector的相关资料是:\n"       \
+		   "\t typeSize=%d, length=%d, quan=%d\n", vector.typeSize, vector.length, vector.quan);
+	printf("vector的数据依次是:");
+	for (i=0; i<vector.quan; i++){
+		if (i%10 == 0)
+			putchar(10);
+		ptr = vector.data;
+		ptr = (char *)ptr + i*vector.typeSize;
+		pInt = (int *)ptr;
+		printf("%d  ", *pInt);
+
+	}
+	printf("\n");
+}
+
+//依次输出vrector的相关资料，以及各个数据(其数据类型为double)
+static void PrintVectorDouble(CTLVector vector){
+	int i;
+	double *pDou;
+	void *ptr;
+
+	printf("\t vector的相关资料是:\n"       \
+		   "\t typeSize=%d, length=%d, quan=%d\n", vector.typeSize, vector.length, vector.quan);
+	printf("vector的数据依次是:");
+	for (i=0; i<vector.quan; i++){
+		if (i%10 == 0)
+			putchar(10);
+		ptr = vector.data;
+		ptr = (char *)ptr + i*vector.typeSize;
+		pDou = (double *)ptr;
+		printf("%f  ", *pDou);
+
+	}
+	printf("\n");
+}
+
+//依次输出vrector的相关资料，以及各个数据(其数据类型为char)
+static void PrintVectorChar(CTLVector vector){
+	int i;
+	char *pChar;
+	void *ptr;
+
+	printf("\t vector的相关资料是:\n"       \
+		   "\t typeSize=%d, length=%d, quan=%d\n", vector.typeSize, vector.length, vector.quan);
+	printf("vector的数据依次是:");
+	for (i=0; i<vector.quan; i++){
+		if (i%10 == 0)
+			putchar(10);
+		ptr = vector.data;
+		ptr = (char *)ptr + i*vector.typeSize;
+		pChar = (char *)ptr;
+		printf("%c  ", *pChar);
+
+	}
+	printf("\n");
+}
+
+//函数功能：1、依次输出vrector的相关资料，以及各个数据(根据typeSize大小，自动选择类型)
+void PrintVector(struct CTLVector vector){
+	switch (vector.typeSize){
+		case 1:
+			PrintVectorChar(vector);
+			break;
+		case 4:
+			PrintVectorInt(vector);
+			break;
+		case 8:
+			PrintVectorDouble(vector);
+			break;
+		default:
+			printf("debug.cpp文件中PrintVector()函数typeSize出现未定义值\n");
+			break;
+	}
+}
+
+
 

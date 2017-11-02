@@ -10,7 +10,7 @@
  #include "CTLStack.h"
  #include "CTLQueue.h"
  #include "CTLList.h"
-
+ #include "CTLVector.h"
 
  union ScanVal
 {
@@ -30,6 +30,8 @@ extern void PrintType(void *record, int size);
 
 //函数功能：根据size不同，来区分输入的是val的哪一个成员
 extern void ScanType(union ScanVal *val, int size);
+
+extern void PrintVector(struct CTLVector vector);
 
 
  #endif // _CTL_DEBUG_H

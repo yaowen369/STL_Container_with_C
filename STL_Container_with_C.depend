@@ -16,20 +16,22 @@
 	<stdlib.h>
 	<assert.h>
 
-1509538949 source:d:\code\github_blog\stl_container_with_c\src\debug.c
+1509623889 source:d:\code\github_blog\stl_container_with_c\src\debug.c
 	"debug.h"
 
-1509538879 d:\code\github_blog\stl_container_with_c\src\debug.h
+1509623933 d:\code\github_blog\stl_container_with_c\src\debug.h
 	"CTLStack.h"
 	"CTLQueue.h"
 	"CTLList.h"
+	"CTLVector.h"
 
-1509539415 source:d:\code\github_blog\stl_container_with_c\src\main.c
+1509624511 source:d:\code\github_blog\stl_container_with_c\src\main.c
 	<stdio.h>
 	<stdlib.h>
 	"testStack.h"
 	"testQueue.h"
 	"testList.h"
+	"testVector.h"
 
 1509278460 d:\code\github_blog\stl_container_with_c\src\teststack.h
 	<stdio.h>
@@ -65,4 +67,18 @@
 
 1509539235 source:d:\code\github_blog\stl_container_with_c\src\testlist.c
 	"testList.h"
+
+1509622954 source:d:\code\github_blog\stl_container_with_c\src\ctlvector.c
+	"CTLVector.h"
+	"debug.h"
+
+1509622634 d:\code\github_blog\stl_container_with_c\src\ctlvector.h
+	"ctl.h"
+
+1509624110 source:d:\code\github_blog\stl_container_with_c\src\testvector.c
+	"testVector.h"
+
+1509623691 d:\code\github_blog\stl_container_with_c\src\testvector.h
+	"debug.h"
+	"CTLVector.h"
 

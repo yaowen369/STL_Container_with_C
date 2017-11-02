@@ -3,7 +3,7 @@
 #include "testStack.h"
 #include "testQueue.h"
 #include "testList.h"
-
+#include "testVector.h"
 
 int main(){
     //TestCTLStack();
@@ -24,7 +24,7 @@ int main(){
 			TestList();
 			break;
 		case 4:
-			//TestVector();
+			TestVector();
 			break;
 		default:
 			printf("你输入的值有误\n");
